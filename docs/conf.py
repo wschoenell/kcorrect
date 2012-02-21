@@ -27,18 +27,18 @@ sys.path.insert(0, os.path.abspath('..'))
 # General information about the project.
 
 # This does not *have* to match the package name, but typically does
-project = u'packagename' 
-copyright = u'2011'
+project = u'kcorrect' 
+copyright = u'2012'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 
-import packagename
+import kcorrect
 # The short X.Y version.
-version = packagename.__version__.split('-', 1)[0]
+version = kcorrect.__version__.split('-', 1)[0]
 # The full version, including alpha/beta/rc tags.
-release = packagename.__version__
+release = kcorrect.__version__
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
 #add_function_parentheses = True
@@ -84,7 +84,7 @@ htmlhelp_basename = ''
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'Astropy.tex', u'Astropy Documentation',
-   u'Erik Tollerud, Thomas Robitaille, Perry Greenfield, and the Astropy Collaboration', 'manual'),
+   u'Taro Sato, Michael Blanton, and the Kcorrect Developers', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -98,7 +98,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'astropy', u'Astropy Documentation',
-     [u'Erik Tollerud, Thomas Robitaille, Perry Greenfield, and the Astropy Collaboration'], 1)
+     [u'Taro Sato, Michael Blanton, and the Kcorrect Developers'], 1)
 ]
 
 # This is added to the end of RST files - a good place to put substitutions to
