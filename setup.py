@@ -11,14 +11,19 @@ from setuptools import setup, find_packages
 from astropy import setup_helpers
 from astropy.version_helper import get_git_devstr, generate_version_py
 
+from kcorrect import __doc__ as kcorrectdoc
+#this will fail if kcorrect import fails due to un-built C libraries
+#... this may be a problem once the actual code is here, in which case the
+#LONG_DESCRIPTION can be manually copied over or just skipped
+
 # Set affiliated package-specific settings
-PACKAGENAME = 'packagename'
-DESCRIPTION = 'Astropy affiliated package'
-LONG_DESCRIPTION = ''
-AUTHOR = ''
-AUTHOR_EMAIL = ''
+PACKAGENAME = 'kcorrect'
+DESCRIPTION = 'Python bindings for the Blanton et al. 2007 Kcorrect code. (Astropy affiliated package)'
+LONG_DESCRIPTION = kcorrectdoc
+AUTHOR = 'Taro Sato'
+AUTHOR_EMAIL = 'ubutsu@gmail.com'
 LICENSE = 'BSD'
-URL = 'http://astropy.org'
+URL = 'http://github.com/astropy/kcorrect'
 
 #version should be PEP386 compatible (http://www.python.org/dev/peps/pep-0386)
 version = '0.0.dev'
