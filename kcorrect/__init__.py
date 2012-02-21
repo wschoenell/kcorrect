@@ -1,4 +1,12 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
+"""
+kcorrect -- Python port
+
+This is an astropy affiliated package containing a Python port of 
+the K-correction program written by Michael Blanton (NYU).  
+Currently this only implements the most basic aspects of 
+K-correction.
+"""
 
 try:
     from .version import version as __version__
